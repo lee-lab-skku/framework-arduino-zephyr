@@ -1,0 +1,9 @@
+{
+  "name": "framework-arduino-zephyr",
+  "version": "0.53.1-fork.leelabskku",
+  "description": "Arduino Core based on Zephyr+llext",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lee-lab-skku/framework-arduino-zephyr.git"
+  }
+}
