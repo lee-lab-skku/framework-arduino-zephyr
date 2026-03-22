@@ -366,3 +366,12 @@ FORCE_EXPORT_SYM(fs_mkfs);
 FORCE_EXPORT_SYM(fs_register);
 FORCE_EXPORT_SYM(fs_unregister);
 #endif
+
+#if defined(CONFIG_DYNAMIC_INTERRUPTS)
+FORCE_EXPORT_SYM(irq_connect_dynamic);
+FORCE_EXPORT_SYM(irq_is_enabled);
+FORCE_EXPORT_SYM(irq_disconnect_dynamic);
+FORCE_EXPORT_SYM(k_is_in_isr);
+FORCE_EXPORT_SYM(irq_enable);
+FORCE_EXPORT_SYM(irq_disable);
+#endif
