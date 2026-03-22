@@ -366,3 +366,14 @@ FORCE_EXPORT_SYM(fs_mkfs);
 FORCE_EXPORT_SYM(fs_register);
 FORCE_EXPORT_SYM(fs_unregister);
 #endif
+
+#if defined(CONFIG_DYNAMIC_INTERRUPTS)
+EXPORT_SYMBOL(irq_connect_dynamic);
+EXPORT_SYMBOL(irq_disconnect_dynamic);
+EXPORT_SYMBOL(k_is_in_isr);
+EXPORT_SYMBOL(k_is_preempt_thread);
+EXPORT_SYMBOL(arm_irq_enable);
+EXPORT_SYMBOL(arm_irq_disable);
+EXPORT_SYMBOL(arm_irq_is_enabled);
+EXPORT_SYMBOL(arm_irq_priority_set);
+#endif
