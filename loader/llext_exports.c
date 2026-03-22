@@ -368,10 +368,12 @@ FORCE_EXPORT_SYM(fs_unregister);
 #endif
 
 #if defined(CONFIG_DYNAMIC_INTERRUPTS)
-FORCE_EXPORT_SYM(irq_connect_dynamic);
-FORCE_EXPORT_SYM(irq_disconnect_dynamic);
-FORCE_EXPORT_SYM(k_is_in_isr);
-FORCE_EXPORT_SYM(k_is_preempt_thread);
-FORCE_EXPORT_SYM(arm_irq_enable);
-FORCE_EXPORT_SYM(arm_irq_disable);
+EXPORT_SYMBOL(irq_connect_dynamic);
+EXPORT_SYMBOL(irq_disconnect_dynamic);
+EXPORT_SYMBOL(k_is_in_isr);
+EXPORT_SYMBOL(k_is_preempt_thread);
+EXPORT_SYMBOL(arm_irq_enable);
+EXPORT_SYMBOL(arm_irq_disable);
+EXPORT_SYMBOL(arm_irq_is_enabled);
+EXPORT_SYMBOL(arm_irq_priority_set);
 #endif
